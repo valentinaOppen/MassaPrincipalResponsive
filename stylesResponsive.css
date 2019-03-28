@@ -1,11 +1,15 @@
 @media screen and (max-width: 780px)  
 {
     .gridPrincipal{
-        grid-template-rows: 7.5vh 100vh 100vh auto 92vh 8vh;
+        grid-template-rows: 7.5vh 160vh 100vh auto 92vh 8vh;
     }
     #navMenuTop
     {
         width: 80%;
+    }
+    
+    #sergioMassaTexto {
+        margin-top: 832px !important;
     }
 
     #textPub 
@@ -80,13 +84,21 @@
     }
 
 }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+    .gridPrincipal{
+        grid-template-rows: 7.5vh 150vh 100vh auto 92vh 8vh;
+    }
+    #sergioMassaTexto {
+        margin-top: 1120px !important;
+    }
+}
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) 
 {
       
     .gridPrincipal
     {
-        grid-template-rows: 7.5vh 100vh 70vh auto 52vh 8vh;
+        grid-template-rows: 7.5vh 160vh 70vh auto 52vh 8vh;
     }
 
     .gridSitios
@@ -129,7 +141,11 @@
 { 
     .gridPrincipal
     {
-        grid-template-rows: 7.5vh 100vh auto auto 52vh 8vh;
+        grid-template-rows: 7.5vh 160vh auto auto 52vh 8vh;
+    }
+
+    #sergioMassaTexto {
+        margin-top: 768px !important;
     }
 
     .gridMenuTop

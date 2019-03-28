@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesResponsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="main.js"></script>
 </head>
 <body>
     <div class="gridPrincipal">
@@ -26,7 +25,16 @@
                     <a href="https://twitter.com/SergioMassa" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-        <div class="divHome"></div>
+        <div class="divHome">
+            <div class="row" style="visibility: hidden; margin-top: 660px; width: 100%;" id="sergioMassaTexto">
+                <h2 id="sergio">Sergio</h2>
+                <h2 id="massa">Massa</h2>
+            </div>
+            <div class="sergioMassaPNG">
+                <img class="img-fluid imgSergioMassaPNG" src="img/SergioMassa1.PNG">
+                <img class=" imgSergioMassaMobilePNG" src="img/SergioMassaMobile.PNG">
+            </div>
+        </div>
         <div class="divSlogan">
             <div id="textPub">            
                 "Los argentinos van a buscar que el próximo gobierno ponga en marcha el desarrollo,             
@@ -78,38 +86,43 @@
                 </div>            
             </div>            
         </div>
+
         <div class="divGridForm">
             <div class="gridForm">
                 <p id="titleFormulario">Sumate a nuestra alternativa</p>    
                 <form id="formulario">                    
                     <div class="form-group">                    
-                        <input class="form-control form-control-lg" type="text" placeholder="Nombre">
+                        <input name="Nombre" class="form-control form-control-lg" type="text" placeholder="Nombre">
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg" type="text" placeholder="Lugar">
+                        <input name="Lugar" class="form-control form-control-lg" type="text" placeholder="Lugar">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Email">
+                        <input name="Email"  type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Email">
                     </div>
                     <button id="btnEnviar" type="submit" class="btn btn-primary">ENVIAR</button>
-                </form>                        
+                </form>
+                
+                <div id="alert" class="alert alert-success hidden" role="alert">
+                    <span id="responseMessage"></span>
+                </div>                        
             </div>     
-                       
-            
-    <div class="footer">
-        <div class="navBarBottom">
-                <div class="divRedesBottom">
-                        <a href="https://twitter.com/SergioMassa" target="_blank"><i style="padding:0" class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/SergioMassaOK/" target="_blank"><i style="padding:0" class="fab fa-facebook-f fabBottom"></i></a>
-                        <a href="https://www.instagram.com/sergiomassaok" target="_blank"><i style="padding:0" class="fab fa-instagram fabBottom"></i></a>
-                        <a href="https://twitter.com/SergioMassa" target="_blank"><i style="padding:0" class="fab fa-linkedin fabBottom"></i></a>
+            <div class="footer">
+                <div class="navBarBottom">
+                        <div class="divRedesBottom">
+                                <a href="https://twitter.com/SergioMassa" target="_blank"><i style="padding:0" class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/SergioMassaOK/" target="_blank"><i style="padding:0" class="fab fa-facebook-f fabBottom"></i></a>
+                                <a href="https://www.instagram.com/sergiomassaok" target="_blank"><i style="padding:0" class="fab fa-instagram fabBottom"></i></a>
+                                <a href="https://twitter.com/SergioMassa" target="_blank"><i style="padding:0" class="fab fa-linkedin fabBottom"></i></a>
+                        </div>
+                        <div class="hayAlternativa">
+                            @HayAlternativa
+                        </div>
                 </div>
-                <div class="hayAlternativa">
-                    @HayAlternativa
-                </div>
-        </div>
-    </div>
+            </div>
         </div>        
     </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
