@@ -60,13 +60,13 @@ $body = "Una persona quiere sumarse <br/>Email: " . $email . " <br/>Nombre:" . $
 
 $mail->Body = $body; // Mensaje a enviar
 //$mail->AltBody = "Hola mundo. Esta es la primer línean Acá continuo el mensaje"; // Texto sin html
-$mail->AddAttachment("imagenes/imagen.jpg", "imagen.jpg");
+//$mail->AddAttachment("imagenes/imagen.jpg", "imagen.jpg");
 
 $exito = $mail->Send(); // Envía el correo.
 
 if($exito) {
     $data['code']    = 200;
-    $data['message'] = 'Gracias por sumarte, estaremos contactandote a la brevedad.';
+    $data['message'] = '¡Muchas gracias! Pronto nos pondremos en contacto.';
 } else {
     $data['code']    = 500;
     $data['message'] = 'Hubo un error al guardar el mensaje, reintenta en unos minutos.';
